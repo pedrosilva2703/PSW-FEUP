@@ -3,7 +3,7 @@
 ### Warehouse Management Software
 
 <div align="center">
-<img src="https://gitlab.com/psw2122/a03/cepejoma/-/wikis/uploads/logo.png" alt="logo;" >
+<img src="https://github.com/pedrosilva2703/PSW-FEUP/blob/main/logo.png" alt="logo;" >
 </div>
 
 #### Installation Guides
