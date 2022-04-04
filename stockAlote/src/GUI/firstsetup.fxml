@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@design.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.firstSetup">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="786.0">
+               <children>
+                  <AnchorPane prefHeight="65.0" prefWidth="231.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fitHeight="64.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="64.0" prefWidth="366.0" />
+                  <AnchorPane prefHeight="62.0" prefWidth="245.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="0.0" prefWidth="780.0">
+               <children>
+                  <Line endX="779.2929077148438" endY="-1.6568543910980225" stroke="#a85f0a" strokeLineCap="BUTT" strokeWidth="4.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Line>
+               </children>
+            </VBox>
+            <HBox prefHeight="56.0" prefWidth="785.0" spacing="20.0">
+               <children>
+                  <Region prefHeight="36.0" prefWidth="643.0" />
+                  <Button mnemonicParsing="false" onAction="#goToHomePage" text="Back" textFill="#fffefe">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin></Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="0.0" prefWidth="780.0">
+               <children>
+                  <Line endX="779.2929077148438" endY="-1.6568543910980225" stroke="#a85f0a" strokeWidth="4.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Line>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="50.0" right="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <bottom>
+      <HBox prefHeight="22.0" prefWidth="780.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="382.0" prefWidth="439.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="24.0" prefWidth="443.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Boss Credentials" wrappingWidth="440.7001953125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="45.0" prefWidth="483.0">
+               <children>
+                  <TextField fx:id="nameField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="120.0" promptText="name">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="contactField" maxWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" promptText="contact">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <DatePicker fx:id="birthdate" maxWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" promptText="birthdate">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="45.0" prefWidth="446.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="usernameField" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="120.0" promptText="username">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="pwField" maxWidth="-Infinity" prefWidth="120.0" promptText="password">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="34.0" prefWidth="440.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="New Warehouse" wrappingWidth="442.7001953125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="30.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="45.0" prefWidth="483.0">
+               <children>
+                  <TextField fx:id="nameWH" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="120.0" promptText="name">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="addressWH" maxWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" promptText="address">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <TextField fx:id="capacityWH" maxWidth="-Infinity" prefHeight="30.0" prefWidth="120.0" promptText="capacity (m3)">
+                     <HBox.margin>
+                        <Insets left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="55.0" prefWidth="447.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#create" prefHeight="25.0" prefWidth="100.0" styleClass="dark-blue" text="CREATE" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="170.0" top="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="adduserResponse" alignment="CENTER" prefHeight="20.0" prefWidth="446.0" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

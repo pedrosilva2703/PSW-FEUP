@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@design.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.bossPage">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="786.0">
+               <children>
+                  <AnchorPane prefHeight="65.0" prefWidth="231.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fitHeight="64.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Region maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="64.0" prefWidth="299.0" />
+                  <AnchorPane prefHeight="100.0" prefWidth="248.0">
+                     <children>
+                        <HBox layoutY="63.0" prefHeight="37.0" prefWidth="237.0">
+                           <children>
+                              <Label fx:id="showUsername" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="25.0" prefWidth="210.0" stylesheets="@design.css" text="welcome">
+                                 <padding>
+                                    <Insets right="30.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Arial Italic" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="personalStuff" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onAction="#personalStuffPressed" prefHeight="27.0" prefWidth="50.0" promptText="username" visibleRowCount="3">
+                                 <effect>
+                                    <ImageInput>
+                                       <source>
+                                          <Image url="@../img/user.png" />
+                                       </source>
+                                    </ImageInput>
+                                 </effect></ComboBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="0.0" prefWidth="780.0">
+               <children>
+                  <Line endX="779.2929077148438" endY="-1.6568543910980225" stroke="#a85f0a" strokeLineCap="BUTT" strokeWidth="4.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Line>
+               </children>
+            </VBox>
+            <HBox prefHeight="56.0" prefWidth="785.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#categoryButtonPressed" styleClass="button-active" text="Category">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#userButtonPressed" text="User" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin></Button>
+                  <Region prefHeight="36.0" prefWidth="408.0" />
+                  <Button alignment="CENTER" contentDisplay="RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#refreshButtonPressed" prefHeight="33.0" prefWidth="33.0" styleClass="button-refresh" text="Button">
+                     <effect>
+                        <ImageInput>
+                           <source>
+                              <Image url="@../img/refresh.png" />
+                           </source>
+                        </ImageInput>
+                     </effect>
+                     <HBox.margin>
+                        <Insets top="1.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutButtonPressed" text="Logout" textFill="#fffefe">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="3.0" />
+                     </HBox.margin></Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="30.0" right="30.0" top="10.0" />
+               </padding>
+            </HBox>
+            <VBox prefHeight="0.0" prefWidth="780.0">
+               <children>
+                  <Line endX="779.2929077148438" endY="-1.6568543910980225" stroke="#a85f0a" strokeWidth="4.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Line>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="50.0" right="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <center>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="411.0" prefWidth="282.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="New Category">
+               <VBox.margin>
+                  <Insets left="80.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="newCategoryField" maxWidth="240.0" prefHeight="26.0" prefWidth="130.0" promptText="Category Name">
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="newCategoryCapField" layoutX="10.0" layoutY="26.0" maxWidth="237.0" prefHeight="25.0" prefWidth="237.0" promptText="Capacity (m3)">
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#addButtonPressed" prefHeight="25.0" prefWidth="105.0" styleClass="dark-blue" text="ADD">
+               <VBox.margin>
+                  <Insets left="85.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <AnchorPane maxHeight="-Infinity" prefHeight="153.0" prefWidth="282.0">
+               <children>
+                  <Button layoutX="14.0" layoutY="77.0" mnemonicParsing="false" onAction="#goToPopUpADDSection" prefHeight="27.0" prefWidth="13.0" style="-fx-background-color: green; -fx-border-color: green;" styleClass="button-square" text="+" />
+                  <Button layoutX="53.0" layoutY="77.0" mnemonicParsing="false" onAction="#goToPopUpRemoveSection" style="-fx-background-color: red; -fx-border-color: red;" styleClass="button-square" text="-" />
+               </children>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="358.0" prefWidth="260.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Category">
+               <VBox.margin>
+                  <Insets left="60.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="removeCategoryField" promptText="Category Name">
+               <VBox.margin>
+                  <Insets left="25.0" right="25.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#removeButtonPressed" prefHeight="25.0" prefWidth="105.0" styleClass="dark-blue" text="REMOVE">
+               <VBox.margin>
+                  <Insets left="80.0" top="65.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <HBox prefHeight="22.0" prefWidth="780.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <TableView fx:id="sectionTable" prefHeight="382.0" prefWidth="238.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="t_categname" prefWidth="162.0" text="Section/Category name" />
+          <TableColumn fx:id="t_categcapacity" prefWidth="74.0" text="m3" />
+        </columns>
+      </TableView>
+   </left>
+</BorderPane>

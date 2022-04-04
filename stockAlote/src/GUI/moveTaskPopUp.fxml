@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="300.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.managerNewTaskPopUp">
+   <children>
+      <VBox maxHeight="450.0" maxWidth="0.0" minHeight="300.0" minWidth="450.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE MOVE TASK" textAlignment="CENTER" wrappingWidth="450.13671875">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Text>
+            <ChoiceBox fx:id="typeField" onMouseClicked="#taskType" prefWidth="120.0">
+               <VBox.margin>
+                  <Insets left="165.0" top="10.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <TextField fx:id="productNameField" maxWidth="-Infinity" onAction="#createTask" prefWidth="120.0" promptText="product name">
+               <VBox.margin>
+                  <Insets left="165.0" top="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="originCategoryField" maxWidth="-Infinity" prefWidth="120.0" promptText="from category">
+               <VBox.margin>
+                  <Insets left="165.0" top="10.0" />
+               </VBox.margin></TextField>
+            <TextField fx:id="destinationCategoryField" maxWidth="-Infinity" prefWidth="120.0" promptText="to category">
+               <VBox.margin>
+                  <Insets left="165.0" top="10.0" />
+               </VBox.margin></TextField>
+            <Button maxWidth="-Infinity" mnemonicParsing="false" onAction="#createTask" prefWidth="80.0" text="ADD">
+               <VBox.margin>
+                  <Insets left="185.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <TextField fx:id="qtyField" maxWidth="-Infinity" opacity="0.0" prefWidth="120.0" promptText="quantity">
+               <VBox.margin>
+                  <Insets left="165.0" top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></TextField>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
